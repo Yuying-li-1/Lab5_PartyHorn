@@ -10,13 +10,13 @@ volNum1.addEventListener("change", function(){
 
     //change volume image
     var img1 = document.getElementById('volume-image');
-    if(temp1 >= 67 || temp1 <= 100){
+    if(temp1 >= 67 && temp1 <= 100){
       img1.src="./assets/media/icons/volume-level-3.svg";
     }
-    else if(temp1 >= 34 || temp1 <= 66){
+    else if(temp1 >= 34 && temp1 <= 66){
       img1.src="./assets/media/icons/volume-level-2.svg";
     }
-    else if(temp1 >= 1 || temp1 <= 33){
+    else if(temp1 >= 1 && temp1 <= 33){
       img1.src="./assets/media/icons/volume-level-1.svg";
       console.log(img1.src);
     }
@@ -37,13 +37,13 @@ volNum2.addEventListener("change", function(){
 
     //change volume image
     var img2 = document.getElementById('volume-image');
-    if(temp2 >= 67 || temp2 <= 100){
+    if(temp2 >= 67 && temp2 <= 100){
       img2.src="./assets/media/icons/volume-level-3.svg";
     }
-    else if(temp2 >= 34 || temp2 <= 66){
+    else if(temp2 >= 34 && temp2 <= 66){
       img2.src="./assets/media/icons/volume-level-2.svg";
     }
-    else if(temp2 >= 1 || temp2 <= 33){
+    else if(temp2 >= 1 && temp2 <= 33){
       img2.src="./assets/media/icons/volume-level-1.svg";
       console.log(img1.src);
     }
@@ -53,7 +53,11 @@ volNum2.addEventListener("change", function(){
 
 });
 
-var paly = document.getElementById('honk-btn');
+var playAudio = document.getElementById('honk-btn');
+playAudio.addEventListener("click", function(){
+  var miao = document.getElementById('horn-sound');
+  miao.play();
+});
 
 //sound.volume = volNum;
 // TODO
