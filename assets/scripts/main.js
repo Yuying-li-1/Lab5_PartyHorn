@@ -1,3 +1,4 @@
 // main.js
-//this is comment
+var volNum = volume-slider.valueAsNumber;
+volume-number.valueAsNumber = volNum;
 // TODO
