@@ -1,5 +1,8 @@
 // main.js
-var volNum = volume-slider.valueAsNumber;
+var volNum = document.getElementById('volume-slider').valueAsNumber;
 console.log(volNum);
-volume-number.valueAsNumber = volNum;
+var num = document.getElementById('volume-number');
+num.valueAsNumber = volNum;
+var sound = document.getElementById('horn-sound');
+sound.volume = volNum;
 // TODO
