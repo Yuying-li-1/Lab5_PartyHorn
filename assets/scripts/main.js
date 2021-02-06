@@ -4,5 +4,5 @@ console.log(volNum);
 var num = document.getElementById('volume-number');
 num.valueAsNumber = volNum;
 var sound = document.getElementById('horn-sound');
-sound.volume = volNum;
+//sound.volume = volNum;
 // TODO
